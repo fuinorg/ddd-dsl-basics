@@ -8,8 +8,8 @@ pipeline {
         stage ('Initialize') {
             steps {
                 sh '''
-                   mvn --version
-                   java --version
+                   mvn -version
+                   java -version
                 ''' 
             }
         }
