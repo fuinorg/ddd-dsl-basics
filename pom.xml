@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.fuin</groupId>
+		<artifactId>pom-osgi</artifactId>
+		<version>1.5.0</version>
+	</parent>
+
+	<groupId>org.fuin.ddd.dsl</groupId>
+	<artifactId>ddd-dsl-basics</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<description>Base classes for Domain Driven Design (DDD) with Java</description>
+
+	<scm>
+		<url>https://github.com/fuinorg/ddd-dsl-basics/</url>
+		<connection>scm:git:git://github.com/fuinorg/ddd-dsl-basics.git</connection>
+		<developerConnection>scm:git:git@github.com:fuinorg/ddd-dsl-basics.git</developerConnection>
+	</scm>
+
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/fuinorg/ddd-dsl-basics/issues</url>
+	</issueManagement>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+</project>
