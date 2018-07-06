@@ -1,4 +1,4 @@
-context fuin {
+context org.fuin {
 
 	namespace types {
 		type Number // BigDecimal, BigInteger, Integer, Long, Double, Float
@@ -22,7 +22,7 @@ context fuin {
 		
 	namespace constr {
 		
-		import fuin.types.*
+		import org.fuin.types.*
 		
 		/**
 		 * Ensures that the element is null (not set).
