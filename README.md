@@ -1,5 +1,5 @@
 # ddd-dsl-basics
-Basic types for the DDD DSL language.
+Basic types for the DDD DSL language
 
 [![Build Status](https://fuin-org.ci.cloudbees.com/job/ddd-dsl-basics/badge/icon)](https://fuin-org.ci.cloudbees.com/job/ddd-dsl-basics/)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.fuin/ddd-dsl-basics/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.fuin/ddd-dsl-basics/)
