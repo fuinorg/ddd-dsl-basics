@@ -45,7 +45,7 @@ context org.fuin {
 		/**
 		 * Ensures that the element is 'true'.
 		 */
-		constraint AssertTrue {
+		constraint AssertTrue input Boolean {
 			
 			message "The value must be 'true'"
 			
@@ -54,7 +54,7 @@ context org.fuin {
 		/**
 		 * Ensures that the element is 'false'.
 		 */
-		constraint AssertFalse {
+		constraint AssertFalse input Boolean {
 			
 			message "The value must be 'false'"
 			
@@ -63,10 +63,10 @@ context org.fuin {
 		/**
 		 * Makes sure a numeric is not less than a given value.
 		 */
-		constraint MinValue input BigDecimal | BigInteger | Integer | Long | Double | Float | Number {
+		constraint MinValue input BigDecimal | BigInteger | Integer | Long {
 	
 			/** Expected minimum value (inclusive). */
-			Number expected
+			String expected
 			
 			message "Expected a minimum value of ${expected}, but actual was: ${input}"
 			
@@ -75,10 +75,10 @@ context org.fuin {
 		/**
 		 * Makes sure a numeric is not greater than a given value.
 	 	 */
-		constraint MaxValue input BigDecimal | BigInteger | Integer | Long | Double | Float | Number {
+		constraint MaxValue input BigDecimal | BigInteger | Integer | Long {
 	
 			/** Expected maximum value (inclusive). */
-			Number expected
+			String expected
 	
 			message "Expected a maximum value of ${expected}, but actual was: ${input}"
 			
@@ -87,13 +87,13 @@ context org.fuin {
 		/**
 		 * Makes sure a numeric is not less than or greater than a given value.
 		 */
-		constraint ValueRange input BigDecimal | BigInteger | Integer | Long | Double | Float | Number {
+		constraint ValueRange input BigDecimal | BigInteger | Integer | Long {
 			
 			/** Expected minimum value (inclusive). */
-			Number min
+			String min
 			
 			/** Expected maximum value (inclusive). */
-			Number max
+			String max
 			
 			message "Expected a value between ${min} and ${max}, but actual was: ${input}"
 			
